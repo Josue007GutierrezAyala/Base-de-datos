@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.OleDb;
+using System.Data;
 
 namespace Base_de_datos
 {
@@ -20,6 +22,8 @@ namespace Base_de_datos
     /// </summary>
     public partial class MainWindow : Window
     {
+        OleDbConnection con;
+        DataTable dt;
         public MainWindow()
         {
             InitializeComponent();
