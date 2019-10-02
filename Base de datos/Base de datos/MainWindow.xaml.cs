@@ -27,6 +27,9 @@ namespace Base_de_datos
         public MainWindow()
         {
             InitializeComponent();
+            con = new OleDbConnection();
+            con.ConnectionString = "Provised=Microsoft.Jet.Oledb.4.0;Data Source="
+            +AppDomain.CurrentDomain.BaseDirectory + "\\AlumnosBD.mdb";
         }
 
         private void BtnNuevo_Click(object sender, RoutedEventArgs e)
